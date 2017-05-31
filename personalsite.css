@@ -9,23 +9,39 @@ body{
 }
 
 .home{
-	background: url("chapman.jpg") no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 
     height: 100vh; 
 }
 
+
+.icon{
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+	background-color: blue;
+	color: white;
+	font-family: 'Comfortaa';
+	border-radius: 50%;
+	text-align: center;
+	vertical-align: top;
+	line-height: 60px;
+	margin-top: 20px;
+	margin-left: 20px
+}
+
 .nav{
 	font-size: 14px;
-	position: absolute;
-	right: 40px;
-	width: 50%
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	display: inline-block;
+	text-align: right;
+
 }
 
 .nav ul{
+	display: inline-block;
+	width: 35%;
 	list-style: none;
 	text-align: center;
 	margin: 0;
@@ -34,31 +50,80 @@ body{
 
 .nav li{
 	display: inline-block;
-	color: white;
-	width: 25%;
-	font-family: 'Acme';
+	color: black;
+	width: 33%;
+	font-family: 'Comfortaa';
 }
 
-.name {
-	text-align: left;
-	font-size: 40px;
+.main-pic{
+	position: absolute;
+	width: 50%;
+	display: inline-block;
+	bottom: 0;
+	left: 0;
+	padding-top: 16px;
+}
+
+.me-pic{
+	height: 500px;
+}
+
+.name{
+	width: 50%;
+	display: inline-block;
+	position: absolute;
+	vertical-align: top;
+	right: 100px;
+	bottom: 100px;
+	padding-top: 100px;
 }
 
 .meet{
 	margin: 0;
-	position: absolute;
-	right: 350px;
-	bottom: 250px;
-	font-size: 72px;
+	font-size: 90px;
+	vertical-align: top;
+	display: inline-block;
 	font-family: 'Comfortaa';
+	text-align: right;
 }
 
 .Chapman{
 	margin: 0;
-	position: absolute;
-	right: 150px;
-	bottom: 160px;
+	position: relative;
+	vertical-align: top;
+	padding-left: 100px;
 	font-size: 90px;
-	font-family: 'Architects Daughter';
-	color: rgb(0, 255, 237);
+	font-family: 'Comfortaa';
+	color: blue;
+	display: inline-block;
+	text-align: right;
 }
+
+.about{
+	background-color: blue;
+}
+
+.about-title{
+	margin: 0 auto;
+	color: white;
+	font-family: 'Comfortaa';
+	text-align: center;
+	padding-top: 75px;
+}
+
+.about-pic{
+	width: 200px;
+	vertical-align: bottom;
+	padding-left: 100px;
+	padding-bottom: 200px;
+}
+
+.contact{
+	height: 100vh;
+
+}
+
+.contact_form{
+	height: 100vh;
+}
+

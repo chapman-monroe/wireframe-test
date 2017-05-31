@@ -4,19 +4,53 @@
 	<meta charset="UTF-8">
 	<title>Chapman Monroe's Site</title>
 	<link rel="stylesheet" href="personalsite.css" type="text/css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="main.js"></script>
 </head>
 
 <body>
 	<div class="home">
 		<div class="nav">
 			<ul>
-				<li>about</li><li>resume</li><li>contact</li>
+				<li onclick="scrollDown()">about</li><li>resume</li><li>contact</li>
 			</ul>
 		</div>
-		
-		<div class="meet">Meet</div><br>
-		<div class= "Chapman">Chapman</div>
 
+		<div class="main-pic">
+			<img class ="me-pic" src="chapman.jpg"/>
+		</div><div class="name">
+			<div class="meet">Meet</div><br>
+			<div class= "Chapman">Chapman</div>
+		</div>
+
+	</div>
+
+	<div class = "about">
+		<h1 class="about-title">about</h1>
+		<img class = "about-pic" src="sitting_pic.jpg"/>
+		
+	</div>
+
+	<div class="contact">
+		<form class="contact_form" name="contact_form" method="post" function="send_form_email.php">
+			<div class="form_errors"></div>
+			<div class="name"></div>
+			<input type="text" name="name">
+			<br>
+			<div class="contact_section">
+				<div class="email">Email</div>
+				<input class="first_input" type="text" name="email">
+				<br>
+			</div>
+			<div class="contact_section">
+				<div class="phone">Phone Number</div>
+				<input type="text" name="phone">
+				<br>
+			</div>
+			<div class="message">Message</div>
+			<textarea name="message" placeholder="How can I help you?"></textarea>
+			<input type="submit" value="Submit">
+		</form>
 	</div>
 </body>
 
